@@ -156,7 +156,7 @@
             <div class="row clearfix">
 
                 <!-- About Column -->
-                <div class="column appointment-column col-md-4 col-sm-6 col-xs-12">
+                <div class="column appointment-column col-md-5 col-sm-6 col-xs-12">
                     <div class="inner-column">
                         <h2>About Nextus</h2>
                         <p>
@@ -168,7 +168,7 @@
                 </div>
 
                 <!-- Links Column -->
-                <div class="column links-column col-md-3 col-sm-6 col-xs-12">
+                <div class="column links-column col-md-2 col-sm-6 col-xs-12">
                     <ul class="links-footer">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
@@ -182,7 +182,7 @@
                 <div class="column network-column col-md-5 col-sm-6 col-xs-12">
                     <div class="network-info-tabs">
                         <div class="network-tabs tabs-box">
-                            <ul class="tab-btns tab-buttons clearfix">
+                            {{-- <ul class="tab-btns tab-buttons clearfix">
                                 <li class="our-branches dropdown">
                                     <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="true" href="#0">
@@ -190,7 +190,7 @@
                                         <span class="toggle-text">Address</span>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Tabs Container -->
                             <div class="tabs-content">
@@ -199,13 +199,20 @@
                                         <div class="row clearfix">
                                             <div class="column col-md-6 col-sm-12 col-xs-12">
                                                 <div class="text">
+                                                     <li class="our-branches dropdown">
+                                    <a class="" id="dropdownMenu1" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="true" href="#0">
+                                        <span class="icon flaticon-international"></span>
+                                        <span class="toggle-text">Address</span>
+                                    </a>
+                                </li>
                                                     4th Floor, Gate no 2, Soman Sun City, Bhoirwadi,
                                                     opp Skydeck Hotel, Kalyan (W) 421301.
                                                 </div>
                                             </div>
                                             <div class="column col-md-6 col-sm-12 col-xs-12">
                                                 <div class="text">
-                                                    Phone: <a href="tel:+918956666659">+91 895 666 6659</a><br>
+                                                    Phone: </br><a href="tel:+918956666659">+91 895 666 6659</a><br>
                                                     Queries: <a href="mailto:info@nextusglobalservices.com">info@nextusglobalservices.com</a><br>
                                                     Careers: <a href="mailto:hr@nextusglobalservices.com">hr@nextusglobalservices.com</a>
                                                 </div>

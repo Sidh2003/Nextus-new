@@ -472,7 +472,7 @@
 <section class="consulting-section">
     <div class="auto-container">
         <div class="inner-container">
-            <div class="rotate-text">Who We Are</div>
+           
             <div class="clearfix">
                 
                 <!--Content Column-->
