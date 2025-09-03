@@ -5,10 +5,6 @@
             $host = request()->getHost();
         @endphp
 
-        @if(Str::contains($host, 'technicul.com'))
-            <meta name="robots" content="noindex, nofollow">
-            <meta name="Googlebot" content="noindex, nofollow">
-        @endif
         <!-- TITLE -->
         <title>@yield('title')</title>
 
@@ -29,8 +25,8 @@
         <!-- BASIC CSS -->
         <link  id="themeColors"  rel="stylesheet" href="/backend/dist/css/style.min.css" />
 
-        <!-- TECHNICUL CSS -->
-        <link  id="themeColors"  rel="stylesheet" href="/backend/dist/css/techincul.css" />
+        <!-- Backend CSS -->
+        <link  id="themeColors"  rel="stylesheet" href="/backend/dist/css/backend.css" />
 
         <!-- CAROUSEL -->
         <link rel="stylesheet" href="/backend/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
@@ -56,11 +52,6 @@
         @php
             $host = request()->getHost();
         @endphp
-
-        @if(Str::contains($host, 'technicul.com'))
-            <meta name="robots" content="noindex, nofollow">
-            <meta name="Googlebot" content="noindex, nofollow">
-        @endif
     </head>
     <body>
         <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme"  data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">

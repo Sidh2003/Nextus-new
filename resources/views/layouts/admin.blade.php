@@ -57,10 +57,7 @@
             $host = request()->getHost();
         @endphp
 
-        @if(Str::contains($host, 'technicul.com'))
-            <meta name="robots" content="noindex, nofollow">
-            <meta name="Googlebot" content="noindex, nofollow">
-        @endif
+        
     </head>
     <body>
         <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme"  data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
