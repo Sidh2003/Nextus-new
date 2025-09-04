@@ -434,3 +434,17 @@ a {
     border-radius: 5px;
     background-color: #45a9ba;
 }
+
+.appointment-section .image-column .image .overlay-box
+
+ {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    background-color: rgb(69 169 179 / 81%);
+}
