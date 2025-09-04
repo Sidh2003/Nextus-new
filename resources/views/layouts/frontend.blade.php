@@ -32,105 +32,51 @@
 
 <div class="page-wrapper">
  	
-    <!-- Preloader -->
-    {{-- <div class="preloader"></div> --}}
  	
-    <!-- Main Header-->
-    <header class="main-header">
+   <header class="main-header header-style-two" style="background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+  <div class="auto-container" style="max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
     
-    	<!-- Header Top -->
-    	<div class="header-top">
-        	<div class="auto-container">
-            	<div class="clearfix">
-                    
-                    <!--Top Left-->
-                    <div class="top-left">
-                    	<ul class="links clearfix">
-                        	<li>Need help?</li>
-                        	<li><a href="tel:+91-8956666659"><span class="icon flaticon-technology-2"></span>+91 895 666 6659</a></li>
-                            <li><a href="mailto:info@nextusglobalservices.com"><span class="icon flaticon-envelope-1"></span>info@nextusglobalservices.com</a></li>
-                            <li><a href="#"><span class="icon flaticon-placeholder"></span>Kalyan West, Thane, Maharashtra, 421301</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!--Top Right-->
-                    <div class="top-right clearfix">
-                
-                        
-                        <!--Language-->
-                        <div class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#0"><span class="flag-icon"><img src="/frontend/images/icons/flag.png" alt=""/></span></a>
-                        	
-                        </div>
+    <!-- Logo Box -->
+    <div class="logo-box" style="flex-shrink: 0;">
+      <a href="/" style="display: block;">
+        <img src="/frontend/my_img/logo/logo.jpg" alt="Logo" style="width: 190px; height: 70px;">
+      </a>
+    </div>
 
-                         <div class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#0"><span class="flag-icon"><img src="/frontend/my_img/ind.jpg" alt=""/></span></a>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
+    <!-- Navigation and Career Button -->
+    <div class="nav-button-wrapper" style="display: flex; align-items: center;">
+      
+      <!-- Main Menu -->
+      <nav class="main-menu" style="margin-right: 20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background: none; border: none; padding: 10px; cursor: pointer;">
+            <span class="icon-bar" style="background-color: #333;"></span>
+            <span class="icon-bar" style="background-color: #333;"></span>
+            <span class="icon-bar" style="background-color: #333;"></span>
+          </button>
         </div>
-        <!-- Header Top End -->
-        
-        <!-- Main Box -->
-    	<div class="main-box">
-        	<div class="auto-container">
-            	<div class="outer-container clearfix">
-                    <!--Logo Box-->
-                    <div class="logo-box">
-                        <div class="logo"><a href="/"><img src="/frontend/my_img/1transparency.webp" alt="" style="height: 55px; width:170px;"></a></div>
-                    </div>
-                    
-                    <!--Nav Outer-->
-                    <div class="nav-outer clearfix">
-                    
-                        <!-- Main Menu -->
-                        <nav class="main-menu">
-                            <div class="navbar-header">
-                                <!-- Toggle Button -->    	
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            
-                            <div class="navbar-collapse collapse clearfix">
-                                <ul class="navigation clearfix">
-                                    <li class=" dropdown"><a href="/">Home</a>
-                                    </li>
-                                    <li class="dropdown"><a href="about">About Us</a>
-                                    	
-                                    </li>
-                                    <li class="dropdown"><a href="/services">Services</a>
-                                    	
-                                    </li>
-                                  
-                                    <li><a href="/contact">Contact us</a></li>
-                                 </ul>
-                            </div>
-                        </nav>
-                        <!-- Main Menu End-->
-                        <div class="outer-box">
-                        
-                        	<!--Cart Box-->
-                        	
-                            
-                            <!--Search Box-->
-                            <div class="search-form">
-                               <a href="#0" class="theme-btn btn-style-two" style="padding: 5px 33px; !important">Careers</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--Nav Outer End-->
-                    
-            	</div>    
-            </div>
+        <div class="navbar-collapse collapse clearfix">
+          <ul class="navigation clearfix " style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center;">
+            <li class="" style="margin-right: 15px;"><a href="/">Home</a></li>
+            <li style="margin-right: 15px;"><a href="/about">About Us</a></li>
+            <li style="margin-right: 15px;"><a href="/services">Services</a></li>
+            <li style="margin-right: 15px;"><a href="/contact">Contact Us</a></li>
+          </ul>
         </div>
-    
-    </header>
+      </nav>
+
+      <!-- Career Button -->
+       <a href="#" class="theme-btn btn-style-two hide-on-mobile" style="background-color: #45a9b3; color: white; padding: 10px 20px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
+    Career
+  </a>
+
+
+    </div> <!-- nav-button-wrapper -->
+
+  </div> <!-- auto-container -->
+</header>
+
+
     <!--End Main Header -->
     
     @yield('content')
@@ -145,7 +91,7 @@
                 <!--Footer Logo-->
                 <div class="logo-column col-md-6 col-sm-6 col-xs-12">
                     <div class="logo">
-                        <a href="/"><img src="/frontend/my_img/1transparency.webp" alt="" style="height: 55px; width:170px;"></a>
+                        <a href="/"><img src="/frontend/my_img/logo/logo.jpg" alt="" style="height: 55px; width:170px;"></a>
                     </div>
                 </div>
             </div>
@@ -182,15 +128,6 @@
                 <div class="column network-column col-md-5 col-sm-6 col-xs-12">
                     <div class="network-info-tabs">
                         <div class="network-tabs tabs-box">
-                            {{-- <ul class="tab-btns tab-buttons clearfix">
-                                <li class="our-branches dropdown">
-                                    <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="true" href="#0">
-                                        <span class="icon flaticon-international"></span>
-                                        <span class="toggle-text">Address</span>
-                                    </a>
-                                </li>
-                            </ul> --}}
 
                             <!-- Tabs Container -->
                             <div class="tabs-content">
@@ -202,7 +139,7 @@
                                                      <li class="our-branches dropdown">
                                     <a class="" id="dropdownMenu1" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="true" href="#0">
-                                        <span class="icon flaticon-international"></span>
+                                        <span class="icon flaticon-international" style="color: #45a9b3;"></span>
                                         <span class="toggle-text">Address</span>
                                     </a>
                                 </li>
@@ -213,7 +150,6 @@
                                             <div class="column col-md-6 col-sm-12 col-xs-12">
                                                 <div class="text">
                                                     Phone: </br><a href="tel:+918956666659">+91 895 666 6659</a><br>
-                                                    Queries: <a href="mailto:info@nextusglobalservices.com">info@nextusglobalservices.com</a><br>
                                                     Careers: <a href="mailto:hr@nextusglobalservices.com">hr@nextusglobalservices.com</a>
                                                 </div>
                                             </div>

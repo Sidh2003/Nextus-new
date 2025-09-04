@@ -18,6 +18,7 @@ Route::view('/', 'Frontend.home')->name('home');
 Route::view('/about', 'Frontend.about')->name('about');
 Route::view('/services', 'Frontend.services')->name('services');
 Route::view('/contact', 'Frontend.contact')->name('contact');
+Route::view('/career', 'Frontend.career')->name('career');
 Route::view('/thankyou', 'Frontend.thankyou')->name('thankyou');
 
 Route::fallback(function () {

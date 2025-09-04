@@ -29,7 +29,9 @@
                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="title"><span>Driven To Spark Globally</span>
                         </br>
-                            We Are</div>
+                        <span style="font-size: 20px; line-height: 5px;">Developing and Optimizing all customer experience aspects to the highest standards. We inspire creativity and insight into how work is performed and delivered to boost customer growth.</span>
+                      </div>
+                      
                     </div>
                     
                     <div class="tp-caption" 
@@ -48,7 +50,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                    	<h2 class="text-center" style="color: #45a9b3;">Nextus Global Services</h2>
+                    	{{-- <h2 class="text-center" style="color: #45a9b3;">Nextus Global Services</h2> --}}
                     </div>
                     
                    
@@ -62,16 +64,111 @@
         </div>
     </section>
     <!--End Main Slider-->
+
+
+    <section class="consulting-section" >
+    <div class="auto-container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="inner-container" style="position: relative;">
+            
+            <!-- Flex container -->
+            <div class="clearfix" 
+                 style="
+                    display: flex; 
+                    flex-wrap: wrap; 
+                    align-items: center; 
+                    justify-content: center;
+                    flex-direction: row; 
+                ">
+
+                <!-- Image Column -->
+                <div class="image-column col-md-6 col-sm-12 col-xs-12" 
+                     style="
+                        flex: 1; 
+                        max-width: 50%; 
+                        display: flex; 
+                        justify-content: center; 
+                        padding: 15px;
+                    ">
+                    <div class="image" style="width: 100%;">
+                        <img src="/frontend/images/resource/image-2.jpg" alt="Nextus Team" 
+                             style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: contain;" />
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="content-column col-md-6 col-sm-12 col-xs-12" 
+                     style="
+                        flex: 1; 
+                        max-width: 50%; 
+                        padding: 15px;
+                    ">
+                    <div class="inner-column">
+                        <h2 style="font-size: 28px; margin-bottom: 20px;">
+                            Welcome to <span class="theme_color" style="color: #2196F3;">Nextus Global Services</span>
+                        </h2>
+                        <div class="text" style="font-size: 16px; line-height: 1.6; color: #444;">
+                            <p style="margin-bottom: 20px;">
+                                <strong>Nextus Global Services is a forward‑looking professional services and BPO firm based in Kalyan, Maharashtra</strong>, dedicated to delivering transformative business results for global clients.
+                            </p>
+                            
+                            <ul class="services-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                                    <span class="icon-circle" style="margin-right: 10px;">
+                                        <i class="fas fa-headset"></i>
+                                    </span>
+                                    <div>
+                                        <strong>Customer & Contact Center Services</strong><br />
+                                        Inbound, outbound, and omnichannel support.
+                                    </div>
+                                </li>
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                                    <span class="icon-circle" style="margin-right: 10px;">
+                                        <i class="fas fa-box"></i>
+                                    </span>
+                                    <div>
+                                        <strong>HR & Recruitment Process Outsourcing</strong><br />
+                                        Streamlined hiring and employee onboarding.
+                                    </div>
+                                </li>
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                                    <span class="icon-circle" style="margin-right: 10px;">
+                                        <i class="fas fa-truck-moving"></i>
+                                    </span>
+                                    <div>
+                                        <strong>Digital Design & Marketing</strong><br />
+                                        Creative branding, web design, SEO, and social media.
+                                    </div>
+                                </li>
+                                <li style="display: flex; align-items: flex-start;">
+                                    <span class="icon-circle" style="margin-right: 10px;">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </span>
+                                    <div>
+                                        <strong>Supply Chain & Logistics</strong><br />
+                                        Inventory, sourcing, and delivery solutions.
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
     
     <!--Company Section-->
   <section class="company-section">
   <div class="auto-container" style="max-width: 1200px; margin: 0 auto;">
     <!-- Section Title -->
     <div class="sec-title centered" style="margin-bottom: 40px;">
-      <div class="title" style="font-size: 24px; font-weight: 600; color: #333; margin-bottom: 10px;">
+      <div class="title" style="font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px;">
         Creative Agile And Best-In-Class Service
       </div>
-      <h4>
+      <h4 style="font-size: 18px; color: #555;">
         IT Outsourcing from India is on the rise due to the high quality output and cost advantage offered by companies like <br>
         <strong>Nextus Global Services</strong>.
       </h4>
@@ -81,227 +178,119 @@
     <div class="blocks-column" style="background-image: url(/frontend/images/background/1.jpg); padding: 20px;">
       <div class="services-grid" style="
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
       ">
 
-        <!-- Customer Support Services -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
-          <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
-                <i class="fas fa-headphones"></i>
-              </span>
-            </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-              <a href="#0" style="color: #111; text-decoration: none;">Customer Support Services</a>
-            </h3>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
-              We consistently deliver a scaled-up global customer support service and provide innovative solutions to global enterprises through our CRM, multimodal technologies, and expert professionals.
-            </div>
-          </div>
-        </div>
+      
 
         <!-- BPO Services -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
+        <div class="services-block" style="background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
                 <i class="fas fa-user-tie"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
               <a href="#0" style="color: #111; text-decoration: none;">BPO Services</a>
             </h3>
-        </br>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
               Watch your earnings increase with business process outsourcing services from Nextus Global. Receive accuracy and speed at a fraction of the cost by utilizing our expertise in cloud-based technologies and skilled staff.
             </div>
           </div>
         </div>
 
         <!-- Back-Office Support -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
+        <div class="services-block" style="background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
                 <i class="fas fa-headset"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
               <a href="#0" style="color: #111; text-decoration: none;">Back-Office Support</a>
-              
             </h3>
-             </br>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
               Nextus Global Back Office Support offers a tailored strategy for expanding corporations or small organizations and support in hiring, training and finding the best staff for your business.
             </div>
           </div>
         </div>
 
         <!-- Inbound & Outbound -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
+        <div class="services-block" style="background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
                 <i class="fas fa-clock"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
               <a href="#0" style="color: #111; text-decoration: none;">Inbound & Outbound</a>
             </h3>
-             </br>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
               Nextus Global is the partner you can trust for inbound and outbound contact center services for satisfied customers and better outcomes. Cultivate lasting relationships with your clients with our flawless customer support.
             </div>
           </div>
         </div>
 
-        <!-- Graphic Design -->
+          <!-- Service Card Template -->
         <div class="services-block" style="
           background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+          border-radius: 10px;
+          padding: 25px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           text-align: center;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
         ">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
-                <i class="fas fa-paint-brush"></i>
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
+                <i class="fas fa-headphones"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-              <a href="#0" style="color: #111; text-decoration: none;">Graphic Design</a>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
+              <a href="#0" style="color: #111; text-decoration: none;">Customer Support Services</a>
             </h3>
-             </br>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
-              Nextus Global graphic design service offers high-value creatives that boost strong brand identities and content that complements them, such as landing pages, marketing emails, calls to action, and more.
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
+              We consistently deliver a scaled-up global customer support service and provide innovative solutions to global enterprises through our CRM, multimodal technologies, and expert professionals.
             </div>
           </div>
         </div>
 
         <!-- Web Design & Development -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
+        <div class="services-block" style="background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
                 <i class="fab fa-figma"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
               <a href="#0" style="color: #111; text-decoration: none;">Web Design & Development</a>
             </h3>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
               Nextus Global employs advanced front-end technologies to compel consumers to act. Our developers consistently follow best practices to guarantee compatibility, security, and performance at all times.
             </div>
           </div>
         </div>
 
         <!-- Digital Marketing Services -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
+        <div class="services-block" style="background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
           <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <span class="icon3-circle" style="font-size: 36px; color: #4a9bbf;">
                 <i class="fas fa-bullhorn"></i>
               </span>
             </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">
               <a href="#0" style="color: #111; text-decoration: none;">Digital Marketing Services</a>
             </h3>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
+            <div class="text" style="font-size: 15px; color: #666; line-height: 1.6;">
               Digital marketing service powered by Nextus Global supports growth and increases online exposure. Certified Google experts will assist you in PPC, SEO, and Keyword Analytics to craft solutions for your business.
-            </div>
-          </div>
-        </div>
-
-        <!-- Supply Chain Management -->
-        <div class="services-block" style="
-          background: #fff;
-          border-radius: 8px;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        ">
-          <div class="inner-box">
-            <div class="icon-box" style="margin-bottom: 15px;">
-              <span class="icon3-circle" style="font-size: 30px; color: #4a9bbf;">
-                <i class="fas fa-network-wired"></i>
-              </span>
-            </div>
-            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-              <a href="#0" style="color: #111; text-decoration: none;">Supply Chain Management</a>
-            </h3>
-            <div class="text" style="font-size: 13px; color: #666; line-height: 1.5;">
-              Nextus Global builds and administers supply chains tailored to the needs of various international industry marketplaces or more complicated transportation models.
             </div>
           </div>
         </div>
@@ -312,159 +301,15 @@
 </section>
 
 
-
- {{-- <section class="consulting-section">
-    	<div class="auto-container">
-        	<div class="inner-container">
-            	<div class="rotate-text">Who We Are</div>
-                <div class="clearfix">
-                	
-                	<!--Image Column-->
-                    <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                    	<div class="image">
-                        	<img src="/frontend/images/resource/image-2.jpg" alt="" />
-                        </div>
-                    </div>
-                    
-                    <!--Content Column-->
-                    <!--Content Column-->
-<div class="content-column col-md-6 col-sm-12 col-xs-12">
-    <div class="inner-column">
-        <h2>Flexi Yet Robust Global <span class="theme_color">Supply Network</span></h2>
-        <div class="text">
-            <p>We provide contract logistics and supply chain management solutions to customers. To create efficient long-term models with your company and ensure that your stock management is done in the most productive way possible across all vertical markets, we adjust our warehousing and pick/pack operations.</p>
-            <p><strong>Hassle-Free supply chain management services includes</strong></p>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="services-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
-                            <span class="icon" style="color: #45a9b3; font-size: 24px; margin-right: 12px;">
-                                <i class="fas fa-headset"></i>
-                            </span>
-                            <div>
-                                <strong>Planning</strong><br />
-                                Cutting overall expenses through streamlining your inventory.
-                            </div>
-                        </li>
-                        <li style="display: flex; align-items: flex-start;">
-                            <span class="icon" style="color: #45a9b3; font-size: 24px; margin-right: 12px;">
-                                <i class="fas fa-box"></i>
-                            </span>
-                            <div>
-                                <strong>Sourcing</strong><br />
-                                Fusion of contract logistics and freight forwarding.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="services-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
-                            <span class="icon" style="color: #45a9b3; font-size: 24px; margin-right: 12px;">
-                                <i class="fas fa-truck-moving"></i>
-                            </span>
-                            <div>
-                                <strong>Delivery</strong><br />
-                                Management of your assets from any stage of the supply chain.
-                            </div>
-                        </li>
-                        <li style="display: flex; align-items: flex-start;">
-                            <span class="icon" style="color: #45a9b3; font-size: 24px; margin-right: 12px;">
-                                <i class="fas fa-shipping-fast"></i>
-                            </span>
-                            <div>
-                                <strong>Logistics</strong><br />
-                                Technology-based standardized systems and procedures at a tactical level.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-                    
-                </div>
-                
-            </div>
-        </div>
-    </section> --}}
-
-
-    <section class="consulting-section">
-    <div class="auto-container">
-        <div class="inner-container">
-            <div class="rotate-text">Who We Are</div>
-            <div class="clearfix">
-                
-                <!--Image Column-->
-                <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="image">
-                        <img src="/frontend/images/resource/image-2.jpg" alt="" />
-                    </div>
-                </div>
-                
-                <!--Content Column-->
-                <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="inner-column">
-                        <h2>Flexi Yet Robust Global <span class="theme_color">Supply Network</span></h2>
-                        <div class="text">
-                            <p>We provide contract logistics and supply chain management solutions to customers. To create efficient long-term models with your company and ensure that your stock management is done in the most productive way possible across all vertical markets, we adjust our warehousing and pick/pack operations.</p>
-                            <p><strong>Hassle-Free supply chain management services includes</strong></p>
-
-                            <ul class="services-list" style="list-style: none; padding: 0; margin: 0;">
-                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
-                                    
-                                     <span class="icon-circle">
-                                        <i class="fas fa-headset"></i>
-                                    </span>
-                                    <div>
-                                        <strong>Planning</strong><br />
-                                        Cutting overall expenses through streamlining your inventory.
-                                    </div>
-                                </li>
-                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
-                                    
-                                     <span class="icon-circle">
-                                        <i class="fas fa-box"></i>
-                                    </span>
-                                    <div>
-                                        <strong>Sourcing</strong><br />
-                                        Fusion of contract logistics and freight forwarding.
-                                    </div>
-                                </li>
-                                <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
-                                    
-                                     <span class="icon-circle">
-                                        <i class="fas fa-truck-moving"></i>
-                                    </span>
-                                    <div>
-                                        <strong>Delivery</strong><br />
-                                        Management of your assets from any stage of the supply chain.
-                                    </div>
-                                </li>
-                                <li style="display: flex; align-items: flex-start;">
-                                   
-                                    <span class="icon-circle">
-                                        <i class="fas fa-shipping-fast"></i>
-                                    </span>
-                                    <div>
-                                        <strong>Logistics</strong><br />
-                                        Technology-based standardized systems at a tactical level.
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</section>
+<style>
+  @media (max-width: 768px) {
+    .services-grid {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+    
 
 
     <!--End Company Section-->
@@ -478,43 +323,43 @@
                 <!--Content Column-->
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
-                        <h2>Optimize Process And <span class="theme_color">Improve Experience</span></h2>
+                        <h2>Our <span class="theme_color">Certifications</span></h2>
                         <div class="text">
                             <ul class="services-list" style="list-style: none; padding: 0; margin: 0;">
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
                                     <span class="icon2-circle">
-                                        <i class="fas fa-child"></i>
+                                        <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>Software Assistance</strong><br />
-                                        Help with software usage, financial issues, communication with the development team as needed, and sharing all relevant information.
+                                        <strong>ISO 9001:2015 – Quality Management System (QMS)</strong><br />
+                                        ISO 9001 is the internationally recognized standard for Quality Management Systems.
                                     </div>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
                                     <span class="icon2-circle">
-                                        <i class="fas fa-digital-tachograph"></i>
+                                        <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>Diagnose Systems Remotely</strong><br />
-                                        Using specialized tools, remote diagnostics of all software and hardware-related difficulties, and expert advice in the case of hardware problems.
+                                        <strong>ISO 27001:2022 – Information Security Management System (ISMS)</strong><br />
+                                        This standard provides a structured approach to managing sensitive information.
                                     </div>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 16px;">
                                     <span class="icon2-circle">
-                                        <i class="fab fa-cloudflare"></i>
+                                        <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>Cloud Security Service</strong><br />
-                                        Organizations can lose money and data due to a tiny flaw. Completely configure cloud security settings and get Real-time threat detection using cloud security.
+                                        <strong>GDPR General Data Protection Regulation</strong><br />
+                                        We adhere to the principles of the GDPR to ensure the highest level of data protection and privacy.
                                     </div>
                                 </li>
                                 <li style="display: flex; align-items: flex-start;">
                                     <span class="icon2-circle">
-                                        <i class="fas fa-desktop"></i>
+                                        <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>Remote Desktop Support</strong><br />
-                                        A high-quality computer optimization for the client using a secure connection and fixing any vulnerabilities and threats. Ensuring fast, reliable, and secure system performance.
+                                        <strong>PCI DSS – Payment Card Industry Data Security Standard</strong><br />
+                                        PCI DSS is a globally accepted security standard that safeguards payment card information.
                                     </div>
                                 </li>
                             </ul>
@@ -534,103 +379,6 @@
     </div>
 </section>
 
-
-
-
-    
-    <!--Testimonial Section-->
-    <section class="testimonial-section">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	
-                <!--Title Column-->
-                <div class="title-column col-md-4 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<div class="sec-title light">
-                        	<div class="title">Testimonials</div>
-                            <h2>Customer Feedback</h2>
-                        </div>
-                        <div class="text">Great explorer the truth, the master builder of human happiness no one rejects dislikes our team. </div>
-                        <a href="#" class="more">More Happy Words</a>
-                    </div>
-                </div>
-                
-                <!--Testimonail Column-->
-                <div class="testimonial-column col-md-8 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<div class="single-item-carousel owl-carousel owl-theme">
-                        	
-                            <!--Testimonial Block-->
-                            <div class="testimonial-block">
-                            	<div class="inner-box">
-                                	<div class="content-box">
-                                    	<div class="content">
-                                        	<div class="quote-icon">
-                                            	<span class="icon flaticon-left-quote-1"></span>
-                                            </div>
-                                        	<div class="text">Idea of denouncing pleasure & praising pain was born and I will give you a complete account of the system, and expound the actual teachings.</div>
-                                        </div>
-                                    </div>
-                                    <div class="author-info">
-                                    	<h3>Hardley Richardson</h3>
-                                        <div class="location">Newyork City</div>
-                                    </div>
-                                	<div class="image">
-                                    	<img src="/frontend/images/resource/author-1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Testimonial Block-->
-                            <div class="testimonial-block">
-                            	<div class="inner-box">
-                                	<div class="content-box">
-                                    	<div class="content">
-                                        	<div class="quote-icon">
-                                            	<span class="icon flaticon-left-quote-1"></span>
-                                            </div>
-                                        	<div class="text">Idea of denouncing pleasure & praising pain was born and I will give you a complete account of the system, and expound the actual teachings.</div>
-                                        </div>
-                                    </div>
-                                    <div class="author-info">
-                                    	<h3>Hardley Richardson</h3>
-                                        <div class="location">Newyork City</div>
-                                    </div>
-                                	<div class="image">
-                                    	<img src="/frontend/images/resource/author-1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Testimonial Block-->
-                            <div class="testimonial-block">
-                            	<div class="inner-box">
-                                	<div class="content-box">
-                                    	<div class="content">
-                                        	<div class="quote-icon">
-                                            	<span class="icon flaticon-left-quote-1"></span>
-                                            </div>
-                                        	<div class="text">Idea of denouncing pleasure & praising pain was born and I will give you a complete account of the system, and expound the actual teachings.</div>
-                                        </div>
-                                    </div>
-                                    <div class="author-info">
-                                    	<h3>Hardley Richardson</h3>
-                                        <div class="location">Newyork City</div>
-                                    </div>
-                                	<div class="image">
-                                    	<img src="/frontend/images/resource/author-1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--End Testimonial Section-->
     
    
     
@@ -656,8 +404,8 @@
             </div> --}}
             <div class="content">
             	<h2>Team Works Makes the Dream Work!.</h2>
-                <div class="text">Nothing is going to stop our business.</div>
-                <a href="/contact" class="theme-btn btn-style-three">Contact Us</a>
+                <div class="text" style="font-size: 18px;">Nothing is going to stop our business.</div>
+                <a href="/career" class="theme-btn btn-style-three">Career Opportunities</a>
             </div>
         </div>
     </section>

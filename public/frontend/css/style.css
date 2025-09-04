@@ -1397,7 +1397,7 @@ img{
 	margin-top:7px;
 }
 
-.main-menu .navigation > li:hover > a::before,
+/* .main-menu .navigation > li:hover > a::before,
 .main-menu .navigation > li.current > a::before{
 	opacity:1;
 	-moz-transform:rotate(405deg);
@@ -1405,7 +1405,7 @@ img{
 	-o-transform:rotate(405deg);
 	-webkit-transform:rotate(405deg);
 	transform:rotate(405deg);
-}
+} */
 
 .header-style-two .logo-box{
 	position:relative;
@@ -5396,7 +5396,7 @@ img{
 	font-size:24px;
 	line-height:1.4em;
 	margin-bottom:5px;
-	font-family: 'Yesteryear', cursive;
+	/* font-family: 'Yesteryear', cursive; */
 }
 
 .services-section-five .title-column h2{

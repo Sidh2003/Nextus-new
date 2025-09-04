@@ -15,11 +15,15 @@
 </br>
      <div class="sec-title centered" style="margin-bottom: 40px;">
       <div class="title" style="font-size: 24px; font-weight: 600; color: #333; margin-bottom: 10px;">
-        Creative Agile And Best-In-Class Service
+        Opps ! We,ar Not Found This Page
       </div>
       <h4>
-        IT Outsourcing from India is on the rise due to the high quality output and cost advantage offered by companies like <br>
-        <strong>Nextus Global Services</strong>.
+       We apologize, but it seems like there's been an error. Our team has been notified, </br> and we are working diligently to resolve the issue.
       </h4>
+    </br>
+      <div class="btn-box text-center">
+            	<a href="/" class="theme-btn btn-style-two">Back To Home</a>
+     </div>
     </div>
+     
 @endsection
