@@ -34,7 +34,7 @@
  	
  	
    <header class="main-header header-style-two" style="background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-  <div class="auto-container" style="max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div class="auto-container" style="max-width: 1200px; margin: 0 auto; padding: 0px 20px; display: flex; justify-content: space-between; align-items: center;">
     
     <!-- Logo Box -->
     <div class="logo-box" style="flex-shrink: 0;">
