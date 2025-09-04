@@ -357,3 +357,80 @@ a {
 	position:relative;
 	color:#303030;
 }
+
+.services-section-five .title-column .title {
+    position: relative;
+    color: #45a9b3;
+    font-size: 24px;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+    /* font-family: 'Yesteryear', cursive; */
+}
+
+.services-block-six .inner-box .icon-box {
+    position: relative;
+    line-height: 1em;
+    font-size: 60px;
+    color: #45a9ba;
+    margin-bottom: 15px;
+}
+
+.services-block-four .inner-box .image .overlay-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #ffffff;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    background-color: rgb(69 169 179);
+}
+
+.services-block-four .inner-box .image .icon-box {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 70px;
+    height: 70px;
+    color: #45a9b3;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: center;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    background-color: #ffffff;
+    border-radius: 5px 0px 0px 0px;
+}
+
+.services-block-four .inner-box .lower-content {
+    position: relative;
+    padding: 18px 6px 16px;
+}
+
+.services-block-three .inner-box .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1em;
+    color: #45a9ba;
+}
+
+
+.branch-block .inner-box {
+    position: relative;
+    padding: 35px 35px;
+    border-radius: 5px;
+    background-color: #45a9ba;
+}

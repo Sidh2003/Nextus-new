@@ -5371,7 +5371,7 @@ img{
 
 .services-section-five .column:nth-child(2):before,
 .services-section-five .column:nth-child(3):before{
-	position:absolute;
+	/* position:absolute; */
 	content:'';
 	left:-40px;
 	bottom:-40px;

@@ -66,7 +66,7 @@
       </nav>
 
       <!-- Career Button -->
-       <a href="#" class="theme-btn btn-style-two hide-on-mobile" style="background-color: #45a9b3; color: white; padding: 10px 20px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
+       <a href="/career" class="theme-btn btn-style-two hide-on-mobile" style="background-color: #45a9b3; color: white; padding: 10px 20px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
     Career
   </a>
 
@@ -119,7 +119,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/services">Our Services</a></li>
-                        <li><a href="/contact">Careers</a></li>
+                        <li><a href="/career">Careers</a></li>
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -247,6 +247,12 @@
 <script src="/frontend/js/appear.js"></script>
 <script src="/frontend/js/jquery-ui.js"></script>
 <script src="/frontend/js/script.js"></script>
+
+
+{{-- ANOTHER THEME --}}
+
+
+
 </body>
 
 </html>

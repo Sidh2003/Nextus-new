@@ -2,6 +2,13 @@
 @extends('layouts.frontend')
 @section('title') About US | Nextus global services @endsection
 @section('content')
+<style>
+    .services-section-three {
+    position: relative;
+    padding: 0px 0px 60px;
+}
+</style>
+
  <section class="page-title style-two" style="background-image:url(/frontend/images/background/9.jpg)">
     	<div class="auto-container">
         	<h1>About Us</h1>
@@ -190,12 +197,12 @@
                     </div>
                 </div>
 
-                 <div class="column services-block-six col-md-4 col-sm-6 col-xs-12">
+                 <div class="column services-block-six col-md-8 col-sm-6 col-xs-12">
                 	<div class="inner-box">
                     	<div class="icon-box">
                         	<span class="icon flaticon-medal"></span>
                         </div>
-                        <div class="lower-box"><h3>High uptime reliability</h3></div>
+                        <div class="lower-box"><h3>Powerful and customizable security options</h3></div>
                     </div>
                 </div>
                 
@@ -278,4 +285,128 @@
             </div>
         </div>
     </section>
+
+   <section class="services-section-three">
+    <div class="auto-container">
+        <!--Sec Title-->
+        <div class="sec-title centered">
+            <h2 style="font-size: 28px; font-weight: 700;">Our Mission Value</h2>
+        </div>
+        
+        <div class="row clearfix">
+            
+            <!--Services Block Four-->
+            <div class="services-block-four col-md-3 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="/frontend/images/resource/service-3.jpg" alt="" />
+                        <div class="icon-box">
+                            <span class="icon fas fa-check-circle"></span>
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-icon">
+                                <span class="icon fas fa-check-circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="#0">Quality</a></h3>
+                        <div class="text">Our business practices, the facilities we run, & people we hire, & the technology we use are cutting-edge and best-in-class.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Services Block Four-->
+            <div class="services-block-four col-md-3 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="/frontend/images/resource/service-4.jpg" alt="" />
+                        <div class="icon-box">
+                            <span class="icon fas fa-users"></span>
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-icon">
+                                <span class="icon fas fa-users"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="#0">Clients</a></h3>
+                        <div class="text">The essence of our business is meeting our client's needs and assisting them in reaching their goals.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Services Block Four-->
+            <div class="services-block-four col-md-3 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="/frontend/images/resource/service-5.jpg" alt="" />
+                        <div class="icon-box">
+                            <span class="icon fas fa-handshake"></span>
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-icon">
+                                <span class="icon fas fa-handshake"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="#0">Community</a></h3>
+                        <div class="text">We prioritize positive impact beyond profits, making thoughtful decisions that benefit our community and environment.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Services Block Four-->
+            <div class="services-block-four col-md-3 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <img src="/frontend/images/resource/service-5.jpg" alt="" />
+                        <div class="icon-box">
+                            <span class="icon fas fa-briefcase"></span>
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-icon">
+                                <span class="icon fas fa-briefcase"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="#0">Business Services</a></h3>
+                        <div class="text">Mistaken idea of denouncing pleasure & praising pain was born and will gives complete of the system.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="fluid-section-one">
+    	<div class="outer-container clearfix">
+        	<!--Image Column-->
+            <div class="image-column" style="background-image:url(/frontend/images/resource/image-1.png);">
+            	<figure class="image-box"><img src="/frontend/images/resource/image-1.png" alt=""></figure>
+            </div>
+        	<!--Content Column-->
+            <div class="content-column">
+            	<div class="inner-column">
+					<!--Sec Title-->
+                    <div class="sec-title">
+                    	<div class="title">Our Vision</div>
+                        <h2>We are dedicated Team of Consultants</h2>
+                    </div>
+                    <div class="text">
+                    	<p>We harness our people’s strength, expertise, and passion for making a difference in our communities.</p>
+                        <p><strong> Nextus Global</strong> embraces the diversity of thought, experience, and background skills to deliver lasting results for our clients and communities.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
