@@ -80,7 +80,7 @@
                   </label>
                   <label for="portfolio-upload" 
                          style="display: block; border: 2px dashed #aaa; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
-                    Drag & Drop or Click to Upload
+                     Click to Upload
                   </label>
                   <input type="file" id="portfolio-upload" name="portfolio" style="display: none;">
                 </div>
@@ -91,7 +91,7 @@
                   </label>
                   <label for="portfolio-upload" 
                          style="display: block; border: 2px dashed #aaa; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
-                    Drag & Drop or Click to Upload
+                     Click to Upload
                   </label>
                   <input type="file" id="portfolio-upload" name="portfolio" style="display: none;">
                 </div>
