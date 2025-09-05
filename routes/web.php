@@ -20,6 +20,9 @@ Route::view('/services', 'Frontend.services')->name('services');
 Route::view('/contact', 'Frontend.contact')->name('contact');
 Route::view('/career', 'Frontend.career')->name('career');
 Route::view('/thankyou', 'Frontend.thankyou')->name('thankyou');
+Route::view('/privacy-policy', 'Frontend.privacy-policy')->name('privacy-policy');
+Route::view('/terms-and-condition', 'Frontend.terms-and-condition')->name('terms-and-condition');
+Route::view('/disclaimer', 'Frontend.disclaimer')->name('disclaimer');
 
 Route::fallback(function () {
     return response()->view('Error.404', [], 404);

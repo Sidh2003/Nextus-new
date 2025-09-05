@@ -109,7 +109,7 @@
 
 .consulting-section {
     position: relative;
-    padding-top: 20px !important;
+    padding-top: 0px !important;
 }
 
 
@@ -131,7 +131,7 @@
     width: 100%;
     height: 100%;
     display: block;
-   background-color: rgb(69 169 179 / 63%) !important;
+ background-color: rgb(139 207 211 / 62%) !important;
 }
 
 
@@ -148,53 +148,72 @@
 .rev_slider,
 .rev-slidebg {
     height: 500vh !important; /* Desktop height */
-    max-height: 680px !important;
+    max-height: 630px !important;
     min-height: 350px !important;
-    overflow: hidden;
 }
 
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-    .rev_slider_wrapper,
-    .rev_slider,
-    .rev-slidebg {
-        height: 50vh !important; /* Taller height for mobile */
-        max-height: 500px !important;
-        min-height: 350px !important;
-    }
+@media only screen and (max-width: 767px) {
+  .main-slider .title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding: 0 15px;
+    text-align: center !important;
+  }
 
-    .tp-caption .title {
-        font-size: 22px !important; /* Bigger title font */
-        line-height: 28px !important;
-    }
+  .main-slider .tp-caption .title span:first-child {
+    font-size: 34px !important;
+    line-height: 32px !important;
+  }
 
-    .tp-caption h2 {
-        font-size: 35px !important; /* Bigger subtitle */
-        line-height: 50px !important;
-        margin-top: 125px;
-    }
+  .main-slider .tp-caption .title span:last-child {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
 
-    .tp-caption {
-        padding: 149px 15px !important; /* Better padding */
-    }
-    
-    /* Remove extra margin/padding below slider */
-    .main-slider {
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-    .tp-fullwidth-forcer{
-     width: 100%;
-    height: 540px !important;
-}
-
-.company-section{
-     margin-top: 125px;
-}
+  @media only screen and (max-width: 767px) {
+  .rev_slider_wrapper,
+  .rev_slider,
+  .rev-slidebg {
+    height: 100vh !important;  /* Use viewport height for full screen */
+    min-height: 450px !important;
+  }
 }
 
 
+  .rev_slider_wrapper {
+    overflow: hidden !important;
+  }
+
+  .tp-caption {
+    padding: 0 10px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tp-fullwidth-forcer {
+    height: 650px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .rev_slider_wrapper,
+  .rev_slider,
+  .rev-slidebg {
+    min-height: 500px !important; /* Or whatever height you want for the banner */
+    height: auto !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .consulting-section {
+    padding-top: 40px !important;
+  }
+
+  .tp-fullwidth-forcer {
+    width: 100%;
+    height: 558px !important;
+}
+}
+ 
 
 .metis.tparrows{
     display: none;
@@ -205,11 +224,16 @@
     padding: 0px 0px 35px;
 }
 
-.tp-fullwidth-forcer{
-     width: 100%;
-    height: 750px !important;
+.tp-fullwidth-forcer {
+  width: 100%;
+  max-height: 658px !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .tp-fullwidth-forcer {
+    max-height: 558px !important;
+  }
+}
 
 .services-block .inner-box {
     position: relative;
@@ -447,4 +471,124 @@ a {
     display: block;
     text-align: center;
     background-color: rgb(69 169 179 / 81%);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    background-color: #45a9ba;
+    border-color: #45a9ba;
+}
+
+
+.ui-widget {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+
+.main-footer .widgets-section {
+    padding-bottom: 0px;
+}
+
+.main-footer .upper-box {
+    position: relative;
+    padding: 10px 0px 0px;
+    margin-bottom: 35px;
+    border-bottom: none !important;
+}
+
+.social-icon-one li a {
+    position: relative;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-menu .navbar-header .navbar-toggle {
+        display: inline-block;
+        z-index: 12;
+        border: 1px solid #45a9ba;
+        float: none;
+        margin: -2px 0px 0px 0px;
+        border-radius: 3px;
+        background: #45a9ba;
+    }
+}
+
+
+@media (max-width: 768px) {
+  /* Hide desktop header */
+  .main-header {
+    display: none;
+  }
+
+  /* Show mobile header */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Remove column layout */
+  .mobile-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .mobile-logo img {
+    width: 190px;
+    height: auto;
+  }
+
+  .mobile-career .theme-btn {
+    background-color: #45a9b3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .mobile-menu-toggle {
+    /* Keep hamburger on right */
+  }
+
+  .navbar-toggle {
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: #333;
+  }
+
+  /* Hide desktop-only career button on mobile */
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+
+
+
+.appointment-section .image-column .image .overlay-box h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif !important;
 }

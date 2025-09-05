@@ -3,6 +3,27 @@
     Career | Nextus global services
 @endsection
 @section('content')
+
+<style>
+    .sec-title .title {
+    position: relative;
+    font-size: 30px;
+    color: #45a9b3;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="tel"],
+textarea,
+select {
+    color: #000 !important; /* Force black text */
+}
+
+</style>
+
     <section class="page-title style-two" style="background-image:url(/frontend/images/background/9.jpg)">
         <div class="auto-container">
             <h1>Careers</h1>
@@ -16,6 +37,12 @@
 
     <section class="appointment-section">
         <div class="auto-container">
+            <div class="sec-title">
+            	<div class="title text-center">Grow With Us</div>
+            </br>
+                <p class="text-center">At Nextus Global, ideas are meant to be shared and brought to life to make an impact. It’s where curiosity gets noticed, efforts turned into opportunity. You’ll work with people who care about doing work, asking the right questions, and getting better together. Be it your first role or your next step, there’s space to do something and to enjoy the process while you’re at it.</p>
+                <p class="text-center">The work is fast-paced, and so is the energy around it. Ideas move quickly, feedback is thoughtful, and your input is always part of the process. We thrive on teamwork, support, and the kind of creative energy that makes work feel a little less like work. From small wins to shared goals, there’s always something to break the usual routine. Often, the most meaningful conversations come from the moments</p>
+            </div>
             <div class="inner-container">
                 <div class="clearfix">
 
@@ -30,8 +57,8 @@
                                             <div class="icon-box">
                                                 <span class="icon flaticon-manager"></span>
                                             </div>
-                                            <h2>Lets Work</h2>
-                                            <div class="title">Together</div>
+                                            <h2>Let's Work</h2>
+                                            <div class="title" style="font-size: 30px;">Together</div>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +73,7 @@
                             <div class="text"></div>
                             <!--Default Form-->
                             <div class="default-form">
-                                <form id="contact_form" name="contact_form" action="{{ route('contact.enquiry.store') }}"
+                                <form id="career_form" name="career_form" action="{{ route('career.enquiry.store') }}"
                                     enctype="multipart/form-data" method="POST">
                                     @csrf
                                     <div class="row clearfix">
@@ -80,17 +107,32 @@
                                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                             <select class="custom-select-box" name="function">
                                                 <option value="">Select Function</option>
-                                                <option value="Service One"
-                                                    {{ old('function') == 'Service One' ? 'selected' : '' }}>Service One
+                                                <option value="Customer Support/Service"
+                                                    {{ old('function') == 'Customer Support/Service' ? 'selected' : '' }}>Customer Support/Service
                                                 </option>
-                                                <option value="Service Two"
-                                                    {{ old('function') == 'Service Two' ? 'selected' : '' }}>Service Two
+                                                <option value="Operations"
+                                                    {{ old('function') == 'Operations' ? 'selected' : '' }}>Operations
                                                 </option>
-                                                <option value="Service Three"
-                                                    {{ old('function') == 'Service Three' ? 'selected' : '' }}>Service Three
+                                                <option value="Human Resources (HR)"
+                                                    {{ old('function') == 'Human Resources (HR)' ? 'selected' : '' }}>Human Resources (HR)
                                                 </option>
-                                                <option value="Service Four"
-                                                    {{ old('function') == 'Service Four' ? 'selected' : '' }}>Service Four
+                                                <option value="Digital Marketing"
+                                                    {{ old('function') == 'Digital Marketing' ? 'selected' : '' }}>Digital Marketing
+                                                </option>
+                                                <option value="IT/Technology"
+                                                    {{ old('function') == 'IT/Technology' ? 'selected' : '' }}>IT/Technology
+                                                </option>
+                                                <option value="Finance & Accounting"
+                                                    {{ old('function') == 'Finance & Accounting' ? 'selected' : '' }}>Finance & Accounting
+                                                </option>
+                                                <option value="Legal & Compliance"
+                                                    {{ old('function') == 'Legal & Compliance' ? 'selected' : '' }}>Legal & Compliance
+                                                </option>
+                                                <option value="Admin & Support"
+                                                    {{ old('function') == 'Admin & Support' ? 'selected' : '' }}>Admin & Support
+                                                </option>
+                                                <option value="Business Strategy & Development"
+                                                    {{ old('function') == 'Business Strategy & Development' ? 'selected' : '' }}>Business Strategy & Development
                                                 </option>
                                             </select>
                                             <div class="field_error" id="function-error" style="color:#f33838">
@@ -126,7 +168,7 @@
                                                 Upload Resume*
                                             </label>
                                             <label for="upload_resume"
-                                                style="display: block; border: 2px dashed #aaa; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
+                                                style="display: block; border: 2px dashed #45a9ba; padding: 20px; text-align: center; color: #45a9ba; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
                                                 Click to Upload
                                             </label>
                                             <input type="file" id="upload_resume" name="upload_resume"
@@ -143,7 +185,7 @@
                                                 Upload Portfolio* (Optional)
                                             </label>
                                             <label for="upload_portfolio"
-                                                style="display: block; border: 2px dashed #aaa; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
+                                                style="display: block; border: 2px dashed #45a9ba; padding: 20px; text-align: center; color: #45a9ba; cursor: pointer; border-radius: 5px; font-family: Arial, sans-serif;">
                                                 Click to Upload
                                             </label>
                                             <input type="file" id="upload_portfolio" name="upload_portfolio"
@@ -155,7 +197,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12 text-center">
                                             <button type="submit" class="theme-btn btn-style-two">Submit</button>
                                         </div>
                                     </div>
@@ -176,7 +218,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#contact_form').submit(function(e) {
+            $('#career_form').submit(function(e) {
                 e.preventDefault();
                 $('div[id$="-error"]').empty();
 
@@ -191,7 +233,7 @@
                     cache: false,
                     processData: false,
                     beforeSend: function() {
-                        $('#contact_form_btn').attr('disabled', true).hide();
+                        $('#career_form_btn').attr('disabled', true).hide();
                         $('#form_loader').show();
                     },
                     success: function(data) {
@@ -243,11 +285,34 @@
                         }
                     },
                     complete: function() {
-                        $('#contact_form_btn').attr('disabled', false).show();
+                        $('#career_form_btn').attr('disabled', false).show();
                         $('#form_loader').hide();
                     }
                 });
             });
         });
     </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const resumeInput = document.getElementById('upload_resume');
+        const portfolioInput = document.getElementById('upload_portfolio');
+
+        const resumeLabel = document.querySelector('label[for="upload_resume"]');
+        const portfolioLabel = document.querySelector('label[for="upload_portfolio"]');
+
+        resumeInput.addEventListener('change', function () {
+            const fileName = resumeInput.files.length > 0 ? resumeInput.files[0].name : "Click to Upload";
+            resumeLabel.textContent = fileName;
+        });
+
+        portfolioInput.addEventListener('change', function () {
+            const fileName = portfolioInput.files.length > 0 ? portfolioInput.files[0].name : "Click to Upload";
+            portfolioLabel.textContent = fileName;
+        });
+    });
+</script>
+
+
 @endsection

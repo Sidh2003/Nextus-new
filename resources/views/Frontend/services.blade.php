@@ -4,7 +4,7 @@
 
 <style>
     .company-section {
-  margin-top: 3rem; /* equivalent of mt-5 */
+  margin-top: 0rem; /* equivalent of mt-5 */
 
   
 }
@@ -33,7 +33,7 @@
   <div class="auto-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
     <!-- Left Content -->
     <div style="flex: 1 1 50%; min-width: 320px;">
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Customer Support Services</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">Customer Support Services</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         As the world becomes more digital, there is a greater need than ever for businesses to establish genuine human connections with their customers. At <strong>Nexus Global Services</strong>, we believe every customer interaction is an opportunity to build your brand. Our support networks are integrated with aspects of data and experience to provide the customer with an intelligent, effective, and low-effort solution.
       </p>
@@ -116,7 +116,7 @@
 
     <!-- Right Column -->
     <div>
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #555;">BPO Services</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">BPO Services</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         <strong>Nexus Global Services</strong> recruit, develop, and retain the most exemplary individuals in business process outsourcing to serve your customers as if they were our own. We equip every agent with robust technologies and training programs to provide world-class customer experiences. Technology is essential to our data-driven, CX-first approach to delivering exceptional customer experiences that propel your brand forward.
       </p>
@@ -179,7 +179,7 @@
   <div class="auto-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
     <!-- Left Content -->
     <div style="flex: 1 1 50%; min-width: 320px;">
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Back-Office Support</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">Back-Office Support</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         Back Office Support services are available to assist you in expanding your strategic planning operations support or simply meeting your payroll or other monthly obligations.
       </p>
@@ -214,7 +214,7 @@
 
     <!-- Right Content -->
     <div style="flex: 1 1 50%; min-width: 320px;">
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Inbound & Outbound</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">Inbound & Outbound</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         <strong>Nexus Global Services</strong> is a cloud-based call center solution that uses Voice over Internet Protocol (VoIP). It offers a straightforward method for starting a call center from scratch. You do not need to invest in costly hardware or prolonged agent training.
       </p>
@@ -323,7 +323,7 @@
   <div class="auto-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
     <!-- Left Content -->
     <div style="flex: 1 1 50%; min-width: 320px;">
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Web Design & Development</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">Web Design & Development</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         We are committed to providing innovative solutions that meet your requirements. Our expert PHP developers work on back-end or front-end development for web & mobile apps, as well as code customization and legacy code migration.
       </p>
@@ -355,7 +355,7 @@
 
     <!-- Right Content -->
     <div style="flex: 1 1 50%; min-width: 320px;">
-      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Digital Marketing Services</h2>
+      <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; color: #45a9b3;">Digital Marketing Services</h2>
       <p style="font-size: 1.6rem; line-height: 1.6; color: #555; margin-bottom: 25px;">
         We get your business in front of people who need your services using our search engine optimization and digital marketing services. Get your fully customizable and all-inclusive online marketing strategies.
       </p>

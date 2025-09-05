@@ -17,20 +17,20 @@ class EnquiryController extends Controller
         $query = Enquiry::where('id','!=',0);
 
         return DataTables::eloquent($query)
-            ->editColumn('datetime', function ($enquiry) {
-                return toIndianDateTime($enquiry->created_at);
-            }) 
-            ->editColumn('first_name', function ($enquiry) {
-                return $enquiry->first_name;
-            }) 
-            ->editColumn('last_name', function ($enquiry) {
-                return $enquiry->last_name;
+           ->editColumn('datetime', function ($autoenquiry) {
+                return \Carbon\Carbon::parse($autoenquiry->created_at)
+                    ->setTimezone('Asia/Kolkata')
+                    ->format('d-m-Y || h:i A');
+            })
+
+            ->editColumn('full_name', function ($enquiry) {
+                return $enquiry->full_name;
             }) 
             ->editColumn('email', function ($enquiry) {
                 return $enquiry->email;
             }) 
-            ->editColumn('mobile', function ($enquiry) {
-                return $enquiry->mobile;
+            ->editColumn('subject', function ($enquiry) {
+                return $enquiry->subject;
             }) 
             ->editColumn('message', function ($enquiry) {
                 return mb_strimwidth($enquiry->message, 0, 97, '...');
@@ -40,7 +40,7 @@ class EnquiryController extends Controller
                 return $show;
             })   
            ->addIndexColumn()
-           ->rawColumns(['datetime','first_name','last_name','email','mobile','status','action'])->setRowId('id')->make(true);
+           ->rawColumns(['datetime','full_name','email','subject','status','action'])->setRowId('id')->make(true);
     }
 
     public function list(){

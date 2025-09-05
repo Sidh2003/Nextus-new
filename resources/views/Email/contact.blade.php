@@ -19,6 +19,12 @@
                     <td style="border: 1px solid black; padding: 10px;"><b>&nbsp;&nbsp;{!! $data['email'] !!}</b></td>
                 </tr>
             @endif
+            @if (isset($data['subject']))
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px; width: 100px; overflow: hidden;"><b>Subject</b></td>
+                    <td style="border: 1px solid black; padding: 10px;"><b>&nbsp;&nbsp;{!! $data['subject'] !!}</b></td>
+                </tr>
+            @endif
             @if (isset($data['mobile']))
                 <tr>
                     <td style="border: 1px solid black; padding: 10px; width: 100px; overflow: hidden;"><b>Mobile Number</b>

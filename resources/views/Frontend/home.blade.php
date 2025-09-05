@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 @section('title') Home | Nextus global services @endsection
 @section('content')
+
 <!--Main Slider-->
     <section class="main-slider">
     	
@@ -22,14 +23,14 @@
                     data-width="['950','750','750','550']"
                     data-whitespace="normal"
                     data-hoffset="['0','0','0','0']"
-                    data-voffset="['-80','-120','-120','-120']"
+                    data-voffset="['-80','-100','-40','50']"
                     data-x="['center','center','center','center']"
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                    	<div class="title"><span>Driven To Spark Globally</span>
+                    	<div class="title"><span style="font-size: 60px;">Driven To Spark Globally</span>
                         </br>
-                        <span style="font-size: 20px; line-height: 5px;">Developing and Optimizing all customer experience aspects to the highest standards. We inspire creativity and insight into how work is performed and delivered to boost customer growth.</span>
+                        <span style="font-size: 20px; line-height: 5px;">Developing and Optimizing all customer experience aspects to the highest standards.</br> We inspire creativity and insight into how work is performed and delivered to boost customer growth.</span>
                       </div>
                       
                     </div>
@@ -165,12 +166,12 @@
   <div class="auto-container" style="max-width: 1200px; margin: 0 auto;">
     <!-- Section Title -->
     <div class="sec-title centered" style="margin-bottom: 40px;">
-      <div class="title" style="font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px;">
+      <div class="title" style="font-size: 28px; font-weight: 700; color: #45a9ba; margin-bottom: 15px;">
         Creative Agile And Best-In-Class Service
       </div>
       <h4 style="font-size: 18px; color: #555;">
         IT Outsourcing from India is on the rise due to the high quality output and cost advantage offered by companies like <br>
-        <strong>Nextus Global Services</strong>.
+        <strong>Nextus Global Services</strong>
       </h4>
     </div>
 
@@ -349,7 +350,7 @@
                                         <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>GDPR General Data Protection Regulation</strong><br />
+                                        <strong>General Data Protection Regulation (GDPR )</strong><br />
                                         We adhere to the principles of the GDPR to ensure the highest level of data protection and privacy.
                                     </div>
                                 </li>
@@ -358,7 +359,7 @@
                                         <i class="fas fa-award"></i>
                                     </span>
                                     <div>
-                                        <strong>PCI DSS – Payment Card Industry Data Security Standard</strong><br />
+                                        <strong>Payment Card Industry Data Security Standard (PCI DSS)</strong><br />
                                         PCI DSS is a globally accepted security standard that safeguards payment card information.
                                     </div>
                                 </li>

@@ -32,10 +32,12 @@
 
 <div class="page-wrapper">
  	
- 	
-   <header class="main-header header-style-two" style="background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-  <div class="auto-container" style="max-width: 1200px; margin: 0 auto; padding: 0px 20px; display: flex; justify-content: space-between; align-items: center;">
-    
+
+
+
+<!-- Desktop Header -->
+<header class="main-header header-style-two" style="background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+  <div class="auto-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
     <!-- Logo Box -->
     <div class="logo-box" style="flex-shrink: 0;">
       <a href="/" style="display: block;">
@@ -43,21 +45,22 @@
       </a>
     </div>
 
-    <!-- Navigation and Career Button -->
-    <div class="nav-button-wrapper" style="display: flex; align-items: center;">
-      
-      <!-- Main Menu -->
-      <nav class="main-menu" style="margin-right: 20px;">
+    <!-- Nav and Career Container -->
+    <div class="nav-career-wrapper" style="display: flex; align-items: center; gap: 20px;">
+      <!--Nav Outer-->
+      <nav class="main-menu">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background: none; border: none; padding: 10px; cursor: pointer;">
-            <span class="icon-bar" style="background-color: #333;"></span>
-            <span class="icon-bar" style="background-color: #333;"></span>
-            <span class="icon-bar" style="background-color: #333;"></span>
+          <!-- Toggle Button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
         </div>
+
         <div class="navbar-collapse collapse clearfix">
-          <ul class="navigation clearfix " style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center;">
-            <li class="" style="margin-right: 15px;"><a href="/">Home</a></li>
+          <ul class="navigation clearfix" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center;">
+            <li style="margin-right: 15px;"><a href="/">Home</a></li>
             <li style="margin-right: 15px;"><a href="/about">About Us</a></li>
             <li style="margin-right: 15px;"><a href="/services">Services</a></li>
             <li style="margin-right: 15px;"><a href="/contact">Contact Us</a></li>
@@ -66,15 +69,133 @@
       </nav>
 
       <!-- Career Button -->
-       <a href="/career" class="theme-btn btn-style-two hide-on-mobile" style="background-color: #45a9b3; color: white; padding: 10px 20px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
-    Career
-  </a>
-
-
-    </div> <!-- nav-button-wrapper -->
-
-  </div> <!-- auto-container -->
+      <a href="/career" class="theme-btn btn-style-two hide-on-mobile" style="background-color: #45a9b3; color: white; padding: 10px 20px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
+        Career
+      </a>
+    </div>
+  </div>
 </header>
+
+
+
+
+<div class="mobile-header">
+  <div class="mobile-header-inner">
+    <!-- Logo -->
+    <div class="mobile-logo">
+      <img src="/frontend/my_img/logo/logo.jpg" alt="Logo" />
+    </div>
+
+    <!-- Career Button -->
+    <div class="mobile-career">
+      <a href="/career" class="theme-btn btn-style-two">Career</a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="mobile-menu-toggle">
+      <button type="button" class="navbar-toggle" id="mobile-menu-btn" aria-label="Toggle Menu" style="background: none; border: none; padding: 10px; cursor: pointer;">
+        <span class="icon-bar" style="background-color: #333; display: block; height: 3px; margin: 4px 0;"></span>
+        <span class="icon-bar" style="background-color: #333; display: block; height: 3px; margin: 4px 0;"></span>
+        <span class="icon-bar" style="background-color: #333; display: block; height: 3px; margin: 4px 0;"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <nav id="mobile-nav-menu" class="mobile-nav-menu" style="display: none;">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-nav-menu");
+
+    toggleBtn.addEventListener("click", function () {
+      // Toggle menu visibility
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    });
+  });
+</script>
+
+<style>
+ /* Full-width overlay menu */
+#mobile-nav-menu {
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+  display: none;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #eee;
+}
+
+/* Menu List */
+#mobile-nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* Menu Items */
+#mobile-nav-menu ul li {
+  margin: 10px 0;
+}
+
+/* Menu Links */
+#mobile-nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#mobile-nav-menu ul li a:hover {
+  color: #007bff;
+}
+/* Hide mobile header on desktop */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none !important;
+  }
+}
+
+/* Show mobile header on smaller screens */
+@media (max-width: 991px) {
+  .desktop-header {
+    display: none !important;
+  }
+}
+
+</style>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-nav-menu");
+
+    toggleBtn.addEventListener("click", function () {
+      menu.classList.toggle("open");
+    });
+  });
+</script>
 
 
     <!--End Main Header -->
@@ -89,11 +210,7 @@
         <div class="upper-box">
             <div class="row clearfix">
                 <!--Footer Logo-->
-                <div class="logo-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="logo">
-                        <a href="/"><img src="/frontend/my_img/logo/logo.jpg" alt="" style="height: 55px; width:170px;"></a>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -103,10 +220,15 @@
 
                 <!-- About Column -->
                 <div class="column appointment-column col-md-5 col-sm-6 col-xs-12">
+                    
+                    
+               
                     <div class="inner-column">
-                        <h2>About Nextus</h2>
+                       <div class="logo">
+                        <a href="/"><img src="/frontend/my_img/logo/logo.jpg" alt="" style="height: 83px; width:210px; margin-left: -29px;"></a>
+                    </div>
                         <p>
-                            NextUs Global Services strives to grow your business to the optimal level with our expert services.
+                            Nextus Global Services strives to grow your business to the optimal level with our expert services.
                             We are an India-based company working around the world.
                             We curate customized strategies that are profitable for your business.
                         </p>
@@ -119,8 +241,8 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/services">Our Services</a></li>
-                        <li><a href="/career">Careers</a></li>
                         <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/career">Careers</a></li>
                     </ul>
                 </div>
 
@@ -184,28 +306,27 @@
                 <!-- Left Column -->
                 <div class="column col-md-4 col-sm-12 col-xs-12">
                     <div class="copyright">
-                        Copyright &copy; 2025 The
-                        <a href="https://nextusglobalservices.com/">Nextus global services.</a>
-                        All rights reserved.
+                        Copyright &copy; 2025 
+                        <a href="https://nextusglobalservices.com/">Nextus Global Services.</a>
+                    </br> All rights reserved.
                     </div>
                 </div>
 
                 <!-- Middle Column -->
                 <div class="social-column col-md-5 col-sm-12 col-xs-12">
                     <ul class="social-icon-one">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-and-condition">Terms & Condition</a></li>
+                        <li><a href="/disclaimer">Disclaimer</a></li>
                     </ul>
                 </div>
 
                 <!-- Right Column (Social + Images) -->
                 <div class="social-column col-md-3 col-sm-12 col-xs-12">
-                    <ul class="social-icon-one">
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                        <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    <ul class="social-icon-one" style="margin: 2px;">
+                        <li><a href="https://www.facebook.com/nextus.global.services"><span class="fa fa-facebook" style="font-size: 18px;"></span></a></li>
+                        <li><a href="https://www.instagram.com/nextus.in/"><span class="fa fa-instagram" style="font-size: 18px;"></span></a></li>
+                        <li><a href="https://www.linkedin.com/company/nextus-global-services-pvt-ltd/"><span class="fa fa-linkedin" style="font-size: 18px;"w></span></a></li>
                     </ul>
 
                     <!-- Added Images -->
@@ -250,6 +371,9 @@
 
 
 {{-- ANOTHER THEME --}}
+
+
+
 
 
 

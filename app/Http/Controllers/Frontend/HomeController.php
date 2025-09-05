@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
 
-    public function ContactEnquiryStore(Request $request)
+    public function CareerEnquiryStore(Request $request)
     {
         // Validation rules
         $rules = [
@@ -78,12 +78,12 @@ class HomeController extends Controller
         $enquiry->location = $request->location;
         $enquiry->message = $request->message;
 
-        // ✅ Store Resume
+        
         if ($request->hasFile('upload_resume')) {
             $enquiry->upload_resume = $request->file('upload_resume')->store('resumes', 'public');
         }
 
-        // ✅ Store Portfolio
+       
         if ($request->hasFile('upload_portfolio')) {
             $enquiry->upload_portfolio = $request->file('upload_portfolio')->store('portfolios', 'public');
         }
@@ -97,6 +97,39 @@ class HomeController extends Controller
         return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
     }
 
+
+     public function ContactEnquiryStore(Request $request)
+    {
+        // dd($request->all());
+        // dd($request->enquiry_type);
+        // Validation rules
+        $rules = [
+            'full_name' => 'required',
+            'subject' => 'required',
+            'email' => 'required|email',
+        ];
+
+        $messages = [
+            'full_name.required' => 'Your Full Name is required',
+            'subject.required' => 'Your Subject is required',
+            'email.required' => 'Email is required',
+            'email.email' => 'Email should be a valid email',
+        ];
+
+        $request->validate($rules, $messages);
+        $enquiry = new Enquiry();
+        $enquiry->full_name = $request->full_name;
+        $enquiry->subject = $request->subject;
+        $enquiry->email = $request->email;
+        $enquiry->message = $request->message;
+        $enquiry->save();
+
+        //dd($enquiry);
+        Mail::to('sales@premiumcarpart.com')->send(new ContactMail($enquiry));
+        Mail::to($request->email)->send(new Thankyou($enquiry));
+
+        return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
+    }
 
 
 }
