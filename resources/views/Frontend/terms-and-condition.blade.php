@@ -143,9 +143,12 @@ Upon termination, Your right to use the Service will cease immediately.</p>
                    
                    <h3>Contact Us</h3>
                     <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-                    <ul>
+                     <ul>
                         <li><strong>Email:</strong> <a href="mailto:info@nextusglobalservices.com">info@nextusglobalservices.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+918956666659">+91 895 666 6659</a></li>
+
                     </ul>
+
 
                 </div>
             </div>
