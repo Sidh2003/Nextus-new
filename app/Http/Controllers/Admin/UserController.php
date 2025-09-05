@@ -12,49 +12,53 @@ use View;
 
 class UserController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('Admin.Users.index');
     }
 
-    public function data(Request $request){
+    public function data(Request $request)
+    {
         $systemRoles = getSystemRoles();
-        $query = User::whereHas("roles", function($q) use($systemRoles){ $q->whereIn("name", $systemRoles)->where('name','!=','SuperAdmin'); });
+        $query = User::whereHas("roles", function ($q) use ($systemRoles) {
+            $q->whereIn("name", $systemRoles)->where('name', '!=', 'SuperAdmin'); });
 
         return DataTables::eloquent($query)
             ->editColumn('first_name', function ($user) {
                 return $user->first_name;
-            }) 
+            })
             ->editColumn('last_name', function ($user) {
                 return $user->last_name;
-            }) 
+            })
             ->editColumn('email', function ($user) {
                 return $user->email;
-            }) 
+            })
             ->editColumn('mobile', function ($user) {
                 return $user->mobile;
-            }) 
+            })
             ->editColumn('status', function ($user) {
-                if($user->status == 'ACTIVE'){
-                    return '<div class="form-check form-switch"><input class="form-check-input user-status-switch" type="checkbox" checked data-routekey="'.$user->route_key.'"/></div>';
-                }else{
-                    return '<div class="form-check form-switch"><input class="form-check-input user-status-switch" type="checkbox" data-routekey="'.$user->route_key.'"/></div>';
+                if ($user->status == 'ACTIVE') {
+                    return '<div class="form-check form-switch"><input class="form-check-input user-status-switch" type="checkbox" checked data-routekey="' . $user->route_key . '"/></div>';
+                } else {
+                    return '<div class="form-check form-switch"><input class="form-check-input user-status-switch" type="checkbox" data-routekey="' . $user->route_key . '"/></div>';
                 }
             })
             ->addColumn('action', function ($user) {
-                $show = '<a href="'.route('admin.users.show',['user' => $user->route_key]).'" class="badge bg-info fs-1 modal-one-btn" data-entity="users" data-title="User" data-route-key="'.$user->route_key.'"><i class="fa fa-eye"></i></a>';
+                $show = '<a href="' . route('admin.users.show', ['user' => $user->route_key]) . '" class="badge bg-info fs-1 modal-one-btn" data-entity="users" data-title="User" data-route-key="' . $user->route_key . '"><i class="fa fa-eye"></i></a>';
                 return $show;
-            })   
-           ->addIndexColumn()
-           ->rawColumns(['first_name','last_name','email','mobile','status','action'])->setRowId('id')->make(true);
+            })
+            ->addIndexColumn()
+            ->rawColumns(['first_name', 'last_name', 'email', 'mobile', 'status', 'action'])->setRowId('id')->make(true);
     }
 
-    public function list(){
-		$users = User::all();
-        return response()->json([   
+    public function list()
+    {
+        $users = User::all();
+        return response()->json([
             'status' => 'success',
             'list' => $users
-        ],200);   
-	}
+        ], 200);
+    }
 
     // public function create(){
     //     $systemRoles = getSystemRoles();
@@ -72,11 +76,11 @@ class UserController extends Controller
 
     //     $permissions = [];
     //     $user->assignRole($request->roles);
-	// 	foreach($request->roles as $role_name){
-	// 		$role = Role::where('name',$role_name)->first();
-	// 		array_push($permissions,$role->permissions()->get());
-	// 	}
-	// 	$user->syncPermissions($permissions);
+    // 	foreach($request->roles as $role_name){
+    // 		$role = Role::where('name',$role_name)->first();
+    // 		array_push($permissions,$role->permissions()->get());
+    // 	}
+    // 	$user->syncPermissions($permissions);
 
     //     return response()->json([   
     //         'status' => 'success',
@@ -85,8 +89,9 @@ class UserController extends Controller
     //     ],201);            
     // }
 
-    public function show(User $user){
-        return view('Admin.Users.show',compact('user'));
+    public function show(User $user)
+    {
+        return view('Admin.Users.show', compact('user'));
     }
 
     // public function edit(User $user){
@@ -101,7 +106,7 @@ class UserController extends Controller
     //     $this->rules['password'] = 'nullable|min:6';
     //     $this->rules['password_confirmation'] = 'nullable|same:password';
     //     $request->validate($this->rules, $this->customMessages);
-        
+
     //     $user->fill($request->all());
     //     $user->password = bcrypt($request->password);
     //     $user->save();
@@ -109,11 +114,11 @@ class UserController extends Controller
     //     $permissions = [];
     //     $user->syncRoles([]);
     //     $user->assignRole($request->roles);
-	// 	foreach($request->roles as $role_name){
-	// 		$role = Role::where('name',$role_name)->first();
-	// 		array_push($permissions,$role->permissions()->get());
-	// 	}
-	// 	$user->syncPermissions($permissions);
+    // 	foreach($request->roles as $role_name){
+    // 		$role = Role::where('name',$role_name)->first();
+    // 		array_push($permissions,$role->permissions()->get());
+    // 	}
+    // 	$user->syncPermissions($permissions);
 
     //     return response()->json([   
     //         'status' => 'success',
@@ -122,20 +127,22 @@ class UserController extends Controller
     //     ],201);    
     // }
 
-    public function destroy(User $user){
-        
+    public function destroy(User $user)
+    {
+
     }
 
-    public function changeStatus(Request $request){
+    public function changeStatus(Request $request)
+    {
         $user = User::findByKey($request->route_key);
         $user->status = $request->status;
         $user->save();
 
-        return response()->json([   
+        return response()->json([
             'status' => 'success',
-            'message' => $user->first_name.' has marked '.$user->status.' successfully',
+            'message' => $user->first_name . ' has marked ' . $user->status . ' successfully',
             'user' => $user
-        ],201);    
+        ], 201);
     }
 
     private $rules = [
@@ -148,7 +155,7 @@ class UserController extends Controller
         'roles' => 'required|min:1',
         'status' => 'required',
     ];
-  
+
     private $customMessages = [
         'first_name.required' => 'First Name is required',
         'first_name.regex' => 'First Name should contain only alphabets',

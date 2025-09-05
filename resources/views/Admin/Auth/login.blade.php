@@ -21,9 +21,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <link rel="shortcut icon" type="image/png" href="/backend/dist/images/logos/favicon.ico" /> -->
     <link id="themeColors" rel="stylesheet" href="/backend/dist/css/style.min.css" />
+    <!-- Font Awesome for eye icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+
+    <style>
+        .btn-primary {
+            --bs-btn-color: #fff !important;
+            --bs-btn-bg: #45a9b3 !important;
+            --bs-btn-border-color: #45a9b3 !important;
+
+            --bs-btn-hover-color: #fff !important;
+            --bs-btn-hover-bg: #5cc2cc !important;
+            /* lighter shade */
+            --bs-btn-hover-border-color: #5cc2cc !important;
+
+            --bs-btn-focus-shadow-rgb: 220, 53, 69 !important;
+            --bs-btn-active-color: #fff !important;
+            --bs-btn-active-bg: #45a9b3 !important;
+            --bs-btn-active-border-color: #45a9b3 !important;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+            --bs-btn-disabled-color: #fff !important;
+            --bs-btn-disabled-bg: #45a9b3 !important;
+            --bs-btn-disabled-border-color: #45a9b3 !important;
+        }
+
+
+
+
+        .position-relative .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #999;
+        }
+    </style>
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full"
         data-sidebar-position="fixed" data-header-position="fixed">
         <div class="position-relative overflow-hidden radial-gradient min-vh-100">
@@ -44,21 +80,28 @@
                             class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                             <div class="col-sm-8 col-md-6 col-xl-9">
                                 <div class="text-center">
-                                    <img src="/logo.svg" width="180" alt=""
-                                        style="filter: invert(34%) sepia(66%) saturate(5876%) hue-rotate(208deg) brightness(95%) contrast(103%);" />
+                                    <img src="/frontend/my_img/logo/logo.jpg" width="180" alt="" />
                                     <br /><br />
-                                    <h2 class="mb-3 fs-7 fw-bolder">Welcome to My Dashbord</h2>
+                                    <h2 class="mb-3 fs-7 fw-bolder">Welcome to <br /> <span style="color: #45a9b3">
+                                            Nextus
+                                            Global Services</span>
+                                    </h2>
+
                                     <p class=" mb-9">Your Admin Dashboard</p>
                                 </div>
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">E-Mail</label>
-                                        <input type="email" class="form-control" name="email" />
+                                        <label for="email" class="form-label">E-Mail</label>
+                                        <input type="email" class="form-control" name="email" id="email" />
                                     </div>
                                     <div class="mb-4">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="password">
+                                        <label for="password" class="form-label">Password</label>
+                                        <div class="position-relative">
+                                            <input type="password" class="form-control pe-5" id="password"
+                                                name="password" placeholder="Password">
+                                            <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+                                        </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign
                                         In</button>
@@ -70,7 +113,18 @@
             </div>
         </div>
     </div>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
 
+        togglePassword.addEventListener('click', function() {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
     <script src="/backend/dist/libs/jquery/dist/jquery.min.js"></script>
     <script src="/backend/dist/libs/simplebar/dist/simplebar.min.js"></script>
     <script src="/backend/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

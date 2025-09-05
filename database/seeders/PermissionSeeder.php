@@ -270,7 +270,6 @@ class PermissionSeeder extends Seeder
                 ],
             ]
         ],
-
         'Activity' => [
             'controller' => 'Admin\ActivityController',
             'permissions' => [
@@ -290,6 +289,23 @@ class PermissionSeeder extends Seeder
                     'edit',
                     'update',
                     'changeStatus',
+                ],
+            ]
+        ],
+        'Career' => [
+            'controller' => 'Admin\CareerController',
+            'permissions' => [
+                'career-view' => [
+                    'index',
+                    'data',
+                    'list',
+                    'show',
+                ],
+                'career-store' => [
+
+                ],
+                'career-update' => [
+
                 ],
             ]
         ],
@@ -314,7 +330,7 @@ class PermissionSeeder extends Seeder
             'role-update',
             'role-permission',
 
-            #User
+            #Userc
             'user-view',
             'user-store',
             'user-update',
@@ -328,6 +344,11 @@ class PermissionSeeder extends Seeder
             'enquiry-view',
             'enquiry-store',
             'enquiry-update',
+
+            #Career
+            'career-view',
+            'career-store',
+            'career-update',
 
             #Slider
             'slider-view',
@@ -368,7 +389,7 @@ class PermissionSeeder extends Seeder
             'activity-view',
             'activity-store',
             'activity-update',
-            
+
             //End of Role Permission
         ],
         'User' => [
@@ -378,18 +399,19 @@ class PermissionSeeder extends Seeder
 
     private $users = [
         [
-            'first_name'  => 'Super',
-            'last_name'  => 'Admin',
-            'roles'  => [
+            'first_name' => 'Super',
+            'last_name' => 'Admin',
+            'roles' => [
                 'SuperAdmin',
             ],
-            'mobile'  => '9999999999',
-            'email'  => 'siddhesh.sonavane8600@gmail.com',
+            'mobile' => '9999999999',
+            'email' => 'siddhesh.sonavane8600@gmail.com',
             'password' => 'Siddhesh@123'
         ],
     ];
 
-    public function run(){
+    public function run()
+    {
         #Groups & Permission
         $this->deletePermissions();
         $this->createPermissions();
@@ -401,59 +423,61 @@ class PermissionSeeder extends Seeder
         $this->createUsers();
     }
 
-    private function deletePermissions(){
+    private function deletePermissions()
+    {
         $permissions = Permission::all();
-        foreach($permissions as $permission){
+        foreach ($permissions as $permission) {
             $delete_permission = true;
-            foreach($this->permissions as $group => $data){
-                foreach($data['permissions'] as $p_name => $methods){
-                    if($p_name == $permission->name){
+            foreach ($this->permissions as $group => $data) {
+                foreach ($data['permissions'] as $p_name => $methods) {
+                    if ($p_name == $permission->name) {
                         $delete_permission = false;
                     }
                 }
             }
-            if($delete_permission){
+            if ($delete_permission) {
                 $permission->delete();
             }
         }
 
         $permission_groups = Permissiongroup::all();
-        foreach($permission_groups as $permission_group){
+        foreach ($permission_groups as $permission_group) {
             $delete_permissiongroup = true;
-            foreach($this->permissions as $group => $data){
-                if($group == $permission_group->name){
+            foreach ($this->permissions as $group => $data) {
+                if ($group == $permission_group->name) {
                     $delete_permissiongroup = false;
                 }
             }
-            if($delete_permissiongroup){
+            if ($delete_permissiongroup) {
                 $permission_group->delete();
             }
         }
     }
 
-    private function createPermissions(){
-        foreach($this->permissions as $group => $data){
-            $permissiongroup = Permissiongroup::where('name',$group)->first();
-            if(!$permissiongroup){
+    private function createPermissions()
+    {
+        foreach ($this->permissions as $group => $data) {
+            $permissiongroup = Permissiongroup::where('name', $group)->first();
+            if (!$permissiongroup) {
                 $permissiongroup = new Permissiongroup;
                 $permissiongroup->name = $group;
                 $permissiongroup->controller = $data['controller'];
                 $permissiongroup->save();
-            }else{
+            } else {
                 $permissiongroup->controller = $data['controller'];
                 $permissiongroup->save();
             }
 
-            foreach($data['permissions'] as $permissions_name => $methods){
-                $permission = Permission::where('permissiongroup_id',$permissiongroup->id)->where('name',$permissions_name)->first();
-                if(!$permission){
+            foreach ($data['permissions'] as $permissions_name => $methods) {
+                $permission = Permission::where('permissiongroup_id', $permissiongroup->id)->where('name', $permissions_name)->first();
+                if (!$permission) {
                     $permission = new Permission;
                     $permission->permissiongroup_id = $permissiongroup->id;
                     $permission->name = $permissions_name;
                     $permission->methods = $methods;
                     $permission->guard_name = config('auth.defaults.guard');
                     $permission->save();
-                }else{
+                } else {
                     $permission->methods = $methods;
                     $permission->save();
                 }
@@ -461,25 +485,27 @@ class PermissionSeeder extends Seeder
         }
     }
 
-    private function createRoles(){
-        foreach($this->roles as $role_name => $permissions){
-            $role = Role::where('name',$role_name)->first();
-            if(!$role){
+    private function createRoles()
+    {
+        foreach ($this->roles as $role_name => $permissions) {
+            $role = Role::where('name', $role_name)->first();
+            if (!$role) {
                 $role = new Role;
                 $role->name = $role_name;
                 $role->guard_name = config('auth.defaults.guard');
                 $role->save();
             }
 
-            $permission_ids = Permission::whereIn('name',$permissions)->pluck('id');
+            $permission_ids = Permission::whereIn('name', $permissions)->pluck('id');
             $role->syncPermissions($permission_ids);
         }
     }
 
-    private function createUsers(){
-        foreach($this->users as $data){
-            $user = User::where('email',$data['email'])->first();
-            if(!$user){
+    private function createUsers()
+    {
+        foreach ($this->users as $data) {
+            $user = User::where('email', $data['email'])->first();
+            if (!$user) {
                 $user = new User;
                 $user->email = $data['email'];
                 $user->mobile = $data['mobile'];
@@ -487,7 +513,7 @@ class PermissionSeeder extends Seeder
                 $user->last_name = $data['last_name'];
                 $user->password = \Hash::make($data['password']);
                 $user->save();
-            }else{
+            } else {
                 $user->first_name = $data['first_name'];
                 $user->last_name = $data['last_name'];
                 $user->password = \Hash::make($data['password']);
@@ -499,10 +525,10 @@ class PermissionSeeder extends Seeder
 
             #Sync All Roles Permissions to User
             $all_permissions = collect();
-            foreach($data['roles'] as $role_name){
-                $role = Role::where('name',$role_name)->first();
+            foreach ($data['roles'] as $role_name) {
+                $role = Role::where('name', $role_name)->first();
                 $permissions = $role->permissions()->get();
-                foreach($permissions as $permission){
+                foreach ($permissions as $permission) {
                     $all_permissions->push($permission);
                 }
             }
